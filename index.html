@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/webslides.css">
+    
+    <title>WikipediaSearch</title>
+</head>
+<body>
+  <main role="main">
+
+    <article id="webslides">
+        
+        <!-- Slide 1 -->
+        <section class="bg-apple aligncenter">
+            <h1><strong> <b> WikipediaSearch </b></strong></h1>
+            <p class="text-subtitle aligncenter">
+                An application of Topic Specific PageRank on a Wikipedia subset
+            </p>
+            <p class="text-subtitle aligncenter">
+              Roberto Corti
+            </p>
+            <div class="wrap">
+              <br> <br> <br>
+              <div class="content-left">
+                <img src="img/logo-dssc.png" width="300" height="300" class="aligncenter">
+              </div>
+              <div class="content-right">
+                <img src="img/logo-universita.png" width="300" height="300" class="aligncenter">
+              </div>
+            </div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="bg-apple">
+            <div class="wrap">
+
+                <div class="content-left">
+                    <h2> <b> What is WikipediaSearch? </b> </h2>
+                    <p class="text-subtitle">A Wikipedia search engine</p>
+                    <p class="text-intro">WikipediaSearch is a command line user-interactive tool that computes a Topic Specific PageRank over a Wikipedia corpus.</p>
+                    <p class="text-intro">Considering a set of user rankings on five specific topics, WikipediaSearch performs a ranking of the Wikipedia articles based on the user's preferences.</p>
+                </div>
+                
+                <div class="content-right">
+                  <ul class="flexblock gallery">
+                    <li>
+                      <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/tree/main/InformationRetrieval/Project">
+                        <div class="overlay">
+                          <h2>GitHub repository</h2>
+                        </div>
+                        <img alt="Thumbnail " src="img/readme_wikipediasearch.png">
+                      </a>
+                    </li>
+
+                  </ul>  
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3 -->
+
+        <section class="bg-apple ">
+            <div class="wrap">
+              <img src="img/ranking-removebg-preview.png" class="alignright size-35">
+              <h2> <b> 1. User interaction </b></h3>
+              <p class="text-subtitle">5-stars ranking system</p>
+              <p class="text-intro" >Once started, WikipediaSearch will ask to the user to write 5 topics in which he/she is more interested to read and assign to each of them a rank.</p>
+              <p class="text-intro" >The 5-stars classification is a type of rating scale commonly used in many websites to rate places and items (Google Maps, Amazon.com), with five stars being the highest rating and zero stars the lowest one.</p>
+            </div>
+        </section>
+
+          <!-- Slide 4 -->
+        <section class="bg-apple">
+            <div class="wrap">
+                
+                    <img src="img/pagerank.png"  class="alignright" width="700" height="800">
+                    <h2> <b> 2. Topic Specific PageRank </b></h2>
+                   
+                    <p class="text-subtitle">Linear combination of PageRank vectors</p>
+                    <p class="text-intro" >Given the 5 topics selected by the user, we assign to each one of them a normalized weight proportional to the 5-star rank. <br> <br> 
+                      A topic-specific PageRank is evaluated for each topic.</p> 
+                    <p class="text-intro">The final rank is a linear combination of the topic specific Pagerank vectors using the user's weights.</p>
+ 
+                </div>
+        </section>
+
+        <!-- Slide 5 -->
+        <section class="bg-apple">
+            <div class="wrap">
+                <img src="img/output.png"  class="alignright" width="600" height="500">
+                    <h2> <b> 3. Final Result </b></h2>
+                       
+                    <p class="text-subtitle">Most user-relavant articles list</p>
+                    <p class="text-intro" >On the path <code>results/result_[UserName][UserSurname].html</code> will be created an HTML file with the list of the most important Wikipedia articles for the user on which he/she can jump into. </p>
+                               
+                </div>
+        </section>
+
+        <!-- Slide 6 -->
+        <section class="bg-apple">
+            <!-- .wrap = container (width: 90%) -->
+            <div class="wrap">
+                <h2> <b> WikipediaSearch implementation </b></h2>
+              <ul class="flexblock gallery">
+                <li>
+                  <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/wikipediaGraph.py" title="Wikipedia Graph">
+                    <figure>
+                      <img alt="Thumbnail Wikipedia Graph" src="img/webGraph.png">
+                      <figcaption>
+                        <h2>Building the Wikipedia pages graph</h2>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/personalizedPagerank.py" title="personalizedPageRank">
+                    <figure>
+                      <img alt="Thumbnail" src="img/personalizedPageRank.png">
+                      <figcaption>
+                        <h2>personalized PageRank class implementation</h2>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                    <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/user.py" title="User">
+                      <figure>
+                        <img alt="Thumbnail" src="img/user1.png">
+                        <figcaption>
+                          <h2>User class implementation</h2>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/IRsystem.py" title="irSystem">
+                      <figure>
+                        <img alt="Thumbnail" src="img/irSystem.png">
+                        <figcaption>
+                          <h2>Information Retrieval system class implementation</h2>
+                        </figcaption>
+                      </figure>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+            <!-- .end .wrap -->
+          </section>
+
+        <!-- Slide 7 -->
+        <section class="bg-apple slide-top">
+            <div class="wrap">
+                
+                <h2> <b> Building the Wikipedia pages graph </b></h2>
+                <p class="text-subtitle">How to get a graph for PageRank</p>
+                 
+                <div class="text-intro">
+                    <br>
+                    The python script <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/wikipediaGraph.py">wikipediaGraph.py</a> will build two <code>.json</code> files:
+                    <br> <br>
+                    <ul>
+                        <li> <code>wikipediaGraph_simple.json</code>:  dictionary where each key represents a page of the database. 
+                            Each of them will contain a list of files that correspond to the articles that are linked by the key.
+                            <img class="aligncenter" src="img/wikipediaGraph.png" width="400" height="200">
+                         
+                        <li> <code>wikipediaGraph_simple_contents.json</code>:  dictionary where each key represent a page of the database.
+                              Each of them will contain a list of words specified in the content option inside <code> meta</code> tag of document. 
+                              <img class="aligncenter" src="img/wikipediaContents.png" width="400" height="200">
+                   </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8 -->
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-center">
+              <p><font size="+3">In order to get these two graphs, we need some <b>preprocessing steps</b>.</p></font>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 9 -->
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-left">
+              <h3> <b> 1. Filepath conversion </b></h3>
+              <br>
+              <p>We must convert every link path into a path that starts from the root of the folder.</p>
+            </div>
+            <div class="content-right">
+              <img class="alignright" src="img/link.png">
+            </div>
+          </div>    
+        </section>
+
+        <!-- Slide 10-->
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-left">
+              <h3> <b> 2. External link exclusion </b></h3>
+              <br>
+              <p>Some Wikipedia pages will contain some link tags that refers to pages that are external to Wikipedia. </p>
+            </div>
+            <div class="content-right">
+              <img class="alignright" src="img/externalLink.png">
+            </div>
+          </div>    
+        </section>
+
+        <!-- Slide 10-->
+        <section class="bg-apple">
+          <div class="wrap">
+            <img class="alignright" src="img/communityPortal.png" width="700" height="300">
+            <div class="content-left">
+              <h3> <b> 3. Filtering not useful pages </b></h3>
+              <br>
+              <p>Inside (almost) every page there are links to Wikipedia articles related to some pages that are not an articles of the encyclopedia (help page, community portal, authors discussion, etc...).
+              </p>
+            </div>
+          </div>    
+        </section>
+
+        <!-- Slide 11-->
+        <section class="bg-apple">
+          <div class="wrap">
+              
+              <h2> <b> Personalized PageRank class implementation </b></h2>
+              <p class="text-subtitle">The algorithm class</p>
+              
+              <div class=" text-intro content-left">
+                <br>
+                The python script <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/personalizedPagerank.py"> personalizedPagerank.py</a>
+                 contains the implementation of a class used for computing the topic-specific PageRank algorithm.
+                 <br> <br>
+                The initialization of a <code>personalizedPageRank</code> object will require the two graph's <code>.json</code> files.
+                <br> <br> 
+                <code>generate_graph()</code> and <code>generate_contents()</code> will read them and generate two python dictionaries. 
+                <br><br>
+                <code>generate_stochastic_matrix()</code> will compute the stochastic matrix of the page's graph.
+              </div>
+              <div class="content-right">
+                <img src="img/initPersonalizedPageRank.png">
+              </div>
+          </div>    
+        </section>
+
+         <!-- Slide 12-->
+         <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-center">
+              <p class="text-intro"><font size="+2">The Wikipedia's graph is given by <b> 49142 nodes</b> and <b> 1235150 edges</b>, which
+                 makes the stochastic matrix unfeasible to fit into main memory </font>
+                <br> <br> <br>
+              </div>
+            <div class="content-left text-intro">
+              Neverthless, this matrix has a great number of zero-entries. 
+              <br> <br>
+              Use a Compressed Sparse Row matrix data structure through the <code>scipy.sparse.csr_matrix</code> module.
+            </div>
+            <div class="content-right">
+              <img src="img/stochasticMatrix.png">
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 13-->
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-left text-intro">
+              <code>compute_PersonalizedPageRank</code>  will provide the computation of topic-specific Page Rank.
+              <br> <br> 
+              Three parameters:
+              <ul>
+                <li> a <code>topic</code> 
+                <li> teleporting probability &alpha;
+                <li> precision &epsilon;
+              </ul>  
+              <br> 
+              The computation will then be:
+              <br> <br>
+               &emsp; &emsp; &emsp;  <img src="img/pagerank_calc.png"> <br>
+            
+    
+            </div>
+            <div class="content-right text-intro">
+              For a given <code>topic</code> the Personalized PageRank will need a a topic-specific jump vector. <br> <br>
+              <img src="img/generate_seed.png">
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 14 -->
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2> <b> User class implementation </b></h2>
+            <p class="text-subtitle">Getting user information</p>
+            <div class="content-left text-intro">
+              <br>
+              <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/user.py">user.py</a> will get user information through the <code>User</code> class.
+              <br>
+              <br>
+              <code>get_topic_rate</code> is the method by which the 5-star rate of a given <code>topic</code> is acquired by the <code>User</code> class.
+            </div>
+            <div class="content-right text-intro">
+              <img src="img/userclass.png">
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 15 -->
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2> <b> IR system class implementation </b></h2>
+            <p class="text-subtitle">Getting user's best pages</p>
+            <div class="content-left text-intro">
+              <br>
+              <code>IRsystem</code> class will compute the final Pagerank vector using user'specified weight.
+              <br> <br>
+              Two data-members: a <code>PersonalizedPageRank</code> and a <code>User</code> istance.
+              <br> <br>
+              <code>compute_weights</code> will compute the set of weights for the set of topic specified by the user, while <code>compute_final_pagerank</code> function will calculate the final PageRank vector.
+            </div>
+            <div class="content-right">
+              <img src="img/irsystemclass.png" alt="">
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 16 -->
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-left text-intro">
+              <br> <br> <br>
+              To write the result in a HTML file with the proper hyperlinks to the pages, <code>IRsystem</code> class provides <code>write_result</code> method.
+            </div>
+            <div class="content-right">
+              <img src="img/write_result.png" alt="">
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 17 -->
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-center">
+              <p class="text-intro"><font size="+2">Based on these three classes, the code <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/wikipediaSearch.py"> wikipediaSearch.py </a> provides the command-line interface on which the user can interact with. </font>
+                <br> <br>
+               
+                <img src="img/demo.gif">
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <div class="content-center">
+              <p class="text-intro">
+                <font size="20">Thank you!</font>
+              </p>
+            </div>
+          </div>
+
+        </section>
+
+      </article>
+    </main>
+
+    <script src="js/webslides.js"></script>
+    <script>
+        window.ws = new WebSlides();
+    </script>
+</body>
+</html>
