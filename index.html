@@ -72,7 +72,7 @@
         <section class="bg-apple ">
             <div class="wrap">
               <img src="img/ranking-removebg-preview.png" class="alignright size-35">
-              <h2> <b> 1. User interaction </b></h3>
+              <h2> <b> 1. User interaction </b></h2>
               <p class="text-subtitle">5-stars ranking system</p>
               <p class="text-intro" >Once started, WikipediaSearch will ask to the user to write 5 topics in which he/she is more interested to read and assign to each of them a rank.</p>
               <p class="text-intro" >The 5-stars classification is a type of rating scale commonly used in many websites to rate places and items (Google Maps, Amazon.com), with five stars being the highest rating and zero stars the lowest one.</p>
@@ -82,11 +82,10 @@
           <!-- Slide 4 -->
         <section class="bg-apple">
             <div class="wrap">
-              
                 <div class="content-left">
                   <h2> <b> 2. Topic Specific PageRank </b></h2>
                   <div class="text-subtitle">Linear combination of PageRank vectors</div>
-                    <p class="text-intro" >Given the 5 topics selected by the user, we assign to each one of them a normalized weight proportional to the 5-star rank. <br> <br> 
+                    <p class="text-intro" >Given the 5 topics selected by the user, each one of them is assigned to a normalized weight proportional to the 5-star rank. <br> <br> 
                       A topic-specific PageRank is evaluated for each topic.</p> 
                     <p class="text-intro">The final rank is a linear combination of the topic specific Pagerank vectors using the user's weights.</p>
                 </div>
@@ -177,11 +176,11 @@
                     <br> <br>
                     <ul>
                         <li> <code>wikipediaGraph_simple.json</code>:  dictionary where each key represents a page of the database. 
-                            Each of them will contain a list of files that correspond to the articles that are linked by the key.
+                            Each of them will contain a list of files that correspond to the articles that are linked in the key's file.
                             <img class="aligncenter" src="img/wikipediaGraph.png" width="400" height="200">
                          
-                        <li> <code>wikipediaGraph_simple_contents.json</code>:  dictionary where each key represent a page of the database.
-                              Each of them will contain a list of keywords inside the <code> meta</code> tag of document. 
+                        <li> <code>wikipediaGraph_simple_contents.json</code>:  dictionary where each key represents a page of the database.
+                              Each of them will contain a list of keywords inside the <code> meta</code> tag of the file. 
                               <img class="aligncenter" src="img/wikipediaContents.png" width="400" height="200">
                    </ul>
                 </div>
@@ -192,7 +191,7 @@
         <section class="bg-apple">
           <div class="wrap">
             <div class="content-center">
-              <p><font size="+3">In order to get these two graphs, we need some <b>preprocessing steps</b>.</p></font>
+              <p><font size="+3">In order to get these two graphs, some <b>preprocessing steps</b> are required.</p></font>
             </div>
           </div>
         </section>
@@ -203,7 +202,7 @@
             <div class="content-left">
               <h3> <b> 1. Filepath conversion </b></h3>
               <br>
-              <p>We must convert every link path into a path that starts from the root of the folder.</p>
+              <p>Every link's path must be converted into a path that starts from the root of the folder.</p>
             </div>
             <div class="content-right">
               <img class="alignright" src="img/link.png">
