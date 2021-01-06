@@ -43,10 +43,10 @@
         <!-- Slide 2 -->
         <section class="bg-apple">
             <div class="wrap">
-
+                    
                 <div class="content-left">
                     <h2> <b> What is WikipediaSearch? </b> </h2>
-                    <p class="text-subtitle">A Wikipedia search engine</p>
+                    <div class="text-subtitle">A Wikipedia search engine</div>
                     <p class="text-intro">WikipediaSearch is a command line user-interactive tool that computes a Topic Specific PageRank over a Wikipedia corpus.</p>
                     <p class="text-intro">Considering a set of user rankings on five specific topics, WikipediaSearch performs a ranking of the Wikipedia articles based on the user's preferences.</p>
                 </div>
@@ -82,10 +82,10 @@
           <!-- Slide 4 -->
         <section class="bg-apple">
             <div class="wrap">
+              
                 <div class="content-left">
                   <h2> <b> 2. Topic Specific PageRank </b></h2>
-                   
-                    <p class="text-subtitle">Linear combination of PageRank vectors</p>
+                  <div class="text-subtitle">Linear combination of PageRank vectors</div>
                     <p class="text-intro" >Given the 5 topics selected by the user, we assign to each one of them a normalized weight proportional to the 5-star rank. <br> <br> 
                       A topic-specific PageRank is evaluated for each topic.</p> 
                     <p class="text-intro">The final rank is a linear combination of the topic specific Pagerank vectors using the user's weights.</p>
@@ -103,8 +103,7 @@
                 
                 <div class="content-left">
                     <h2> <b> 3. Final Result </b></h2>
-                       
-                    <p class="text-subtitle">Most user-relavant articles list</p>
+                    <div class="text-subtitle">Most user-relavant articles list</div>
                     <p class="text-intro" >On <code>results/result_[UserName][UserSurname].html</code> will be created an HTML file with the list of the most important Wikipedia articles for the user on which he/she can jump into. </p>
                   </div>
 
@@ -182,7 +181,7 @@
                             <img class="aligncenter" src="img/wikipediaGraph.png" width="400" height="200">
                          
                         <li> <code>wikipediaGraph_simple_contents.json</code>:  dictionary where each key represent a page of the database.
-                              Each of them will contain a list of words specified in the content option inside <code> meta</code> tag of document. 
+                              Each of them will contain a list of keywords inside the <code> meta</code> tag of document. 
                               <img class="aligncenter" src="img/wikipediaContents.png" width="400" height="200">
                    </ul>
                 </div>
@@ -416,9 +415,56 @@
 
             </div>
 
-            
-          
+        </section>
 
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2> <b>Conclusions</b> </h2>
+            <br>
+            <p class="text-intro">WikipediaSearch reprents a basic implementation of topic-specific PageRank and it can be used in order to satisfy a user information need in a large website like Wikipedia.</p>
+          
+            <div class="content-left text-intro">
+              <br>
+            
+              <img src="img/up.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Easy to use and to understand for a user.
+              <br>
+              <br>
+              <br>
+              <img src="img/up.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Final PageRank computation is fast.
+            </div>
+          
+            <div class="content-right text-intro">
+              <br>
+          
+              <img src="img/down.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Keywords in <code>meta</code> tag may not reflect topics in a article.
+              <br>
+              <br>
+              <br>
+              <img src="img/down.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Page and content graphs construction is slow.
+            </div>
+        
+          </div>
+        
+        </section>
+
+        <section class="bg-apple">
+          <div class="wrap">
+            <h2> <b>Possible developments</b> </h2>
+            <br>
+            <br>
+            <div class="text-intro">
+              <ul>
+                <li> <b>Graph construction</b>: speedup the computation. </li>
+                <br>
+                <li>  <b>Refine the content information</b>: some NLP algorithms can be used to extract the main topics of a page.  </li>
+                <br>
+                <li> <b>User information extraction</b>: instead of asking to the user his/her preferences, they could be extracted elsewhere (social media). </li>
+                <br>
+                <li> <b>Use of relevance feedback</b>: given the result, the user can help to get a better ranking (adding a "static" bias to PageRank vector).</li>
+              </ul>
+          </div> 
+          <br> <br> <br> <br> <br>
+          </div>
         </section>
 
         <section class="bg-apple">
@@ -431,6 +477,8 @@
           </div>
 
         </section>
+
+        
 
       </article>
     </main>
