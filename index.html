@@ -22,7 +22,7 @@
         <section class="bg-apple aligncenter">
             <h1><strong> <b> WikipediaSearch </b></strong></h1>
             <p class="text-subtitle aligncenter">
-                An application of Topic Specific PageRank on a Wikipedia subset
+                An application of Personalized PageRank on a Wikipedia subset
             </p>
             <p class="text-subtitle aligncenter">
               Roberto Corti
@@ -47,7 +47,7 @@
                 <div class="content-left">
                     <h2> <b> What is WikipediaSearch? </b> </h2>
                     <div class="text-subtitle">A Wikipedia search engine</div>
-                    <p class="text-intro">WikipediaSearch is a command line user-interactive tool that computes a Topic Specific PageRank over a Wikipedia corpus.</p>
+                    <p class="text-intro">WikipediaSearch is a command line user-interactive tool that computes a Personalized PageRank over a Wikipedia corpus.</p>
                     <p class="text-intro">Considering a set of user rankings on five specific topics, WikipediaSearch performs a ranking of the Wikipedia articles based on the user's preferences.</p>
                 </div>
                 
@@ -83,15 +83,15 @@
         <section class="bg-apple">
             <div class="wrap">
                 <div class="content-left">
-                  <h2> <b> 2. Topic Specific PageRank </b></h2>
-                  <div class="text-subtitle">Linear combination of PageRank vectors</div>
+                  <h2> <b> 2. Personalized PageRank </b></h2>
+                  <div class="text-subtitle">Linear combination of Topic Specific PageRanks</div>
                     <p class="text-intro" >Given the 5 topics selected by the user, each one of them is assigned to a normalized weight proportional to the 5-star rank. <br> <br> 
                       A topic-specific PageRank is evaluated for each topic.</p> 
                     <p class="text-intro">The final rank is a linear combination of the topic specific Pagerank vectors using the user's weights.</p>
                 </div>
                 <div class="content-right">
-                  <br>
-                  <img src="img/pagerank.png"  class="aligncentera" width="700" height="800">
+                  
+                  <img src="img/pagerank.png"  class="aligncenter" width="680" height="800">
                 </div>      
               </div>
         </section>
@@ -129,11 +129,11 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/personalizedPagerank.py" title="personalizedPageRank">
+                  <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/topicSpecificPagerank.py" title="topic-specific PageRank">
                     <figure>
-                      <img alt="Thumbnail" src="img/personalizedPageRank.png">
+                      <img alt="Thumbnail" src="img/topicSpecificPageRank.png">
                       <figcaption>
-                        <h2>personalized PageRank class implementation</h2>
+                        <h2>topic-specific PageRank class implementation</h2>
                       </figcaption>
                     </figure>
                   </a>
@@ -167,7 +167,7 @@
         <section class="bg-apple slide-top">
             <div class="wrap">
                 
-                <h2> <b> Building the Wikipedia pages graph </b></h2>
+                <h2> <b> Building the Wikipedia graph </b></h2>
                 <p class="text-subtitle">How to get a graph for PageRank</p>
                  
                 <div class="text-intro">
@@ -191,7 +191,7 @@
         <section class="bg-apple">
           <div class="wrap">
             <div class="content-center">
-              <p><font size="+3">To get these two graphs, some <b>preprocessing steps</b> are required.</p></font>
+              <p><font size="+3">To get the Wikipedia graph <br> some <b>preprocessing steps</b> are required.</p></font>
             </div>
           </div>
         </section>
@@ -244,22 +244,22 @@
         <section class="bg-apple">
           <div class="wrap">
               
-              <h2> <b> Personalized PageRank class implementation </b></h2>
-              <p class="text-subtitle">The algorithm class</p>
+              <h2> <b> Topic-Specific PageRank class implementation </b></h2>
+              <p class="text-subtitle">The algorithm</p>
               
               <div class=" text-intro content-left">
                 <br>
-                The python script <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/personalizedPagerank.py"> personalizedPagerank.py</a>
+                The python script <a href="https://github.com/RobertoCorti/Information-Retrieval-and-Data-Visualization/blob/main/InformationRetrieval/Project/topicSpecificPagerank.py"> topicSpecificPagerank.py</a>
                  contains the implementation of a class used for computing the topic-specific PageRank algorithm.
                  <br> <br>
-                The initialization of a <code>personalizedPageRank</code> object will require the two graph's <code>.json</code> files.
+                The initialization of a <code>TopicSpecificPageRank</code> object will require the two  <code>.json</code> files.
                 <br> <br> 
                 <code>generate_graph()</code> and <code>generate_contents()</code> will read them and generate two python dictionaries. 
                 <br><br>
                 <code>generate_stochastic_matrix()</code> will compute the stochastic matrix of the page's graph.
               </div>
               <div class="content-right">
-                <img src="img/initPersonalizedPageRank.png">
+                <img src="img/initTopicSpecificPageRank.png">
               </div>
           </div>    
         </section>
@@ -287,7 +287,7 @@
         <section class="bg-apple">
           <div class="wrap">
             <div class="content-left text-intro">
-              <code>compute_PersonalizedPageRank</code>  will provide the computation of topic-specific Page Rank.
+              <code>compute_TopicSpecificPageRank</code>  will provide the computation of Topic-Specific Page Rank.
               <br> <br> 
               Three parameters:
               <ul>
@@ -303,7 +303,7 @@
     
             </div>
             <div class="content-right text-intro">
-              For a given <code>topic</code> the Personalized PageRank will need a a topic-specific jump vector. <br> <br>
+              For a given <code>topic</code> this kind of PageRank will need a topic-specific jump vector. <br> <br>
               <img src="img/generate_seed.png">
             </div>
           </div>
