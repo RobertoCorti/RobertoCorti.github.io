@@ -256,7 +256,7 @@
                  <br> <br>
                 The initialization of a <code>TopicSpecificPageRank</code> object will require the two  <code>.json</code> files.
                 <br> <br> 
-                <code>generate_graph()</code> and <code>generate_contents()</code> will read them and generate two python dictionaries. 
+                <code>generate_graph()</code> and <code>generate_contents()</code> will read them and generate two dictionaries. 
                 <br><br>
                 <code>generate_stochastic_matrix()</code> will compute the stochastic matrix of the page's graph.
               </div>
@@ -338,7 +338,7 @@
               <br>
               <code>IRsystem</code> class will compute the final Pagerank vector using user'specified weight.
               <br> <br>
-              Two data-members: a <code>PersonalizedPageRank</code> and a <code>User</code> istance.
+              Two data-members: a <code>TopicSpecificPageRank</code> and a <code>User</code> istance.
               <br> <br>
               <code>compute_weights</code> will compute the set of weights for the set of topic specified by the user, while <code>compute_final_pagerank</code> function will calculate the final PageRank vector.
             </div>
@@ -422,7 +422,7 @@
           <div class="wrap">
             <h2> <b>Conclusions</b> </h2>
             <br>
-            <p class="text-intro">WikipediaSearch reprents a basic implementation of topic-specific PageRank and it can be used in order to satisfy a user information need in a large website like Wikipedia.</p>
+            <p class="text-intro">WikipediaSearch represents a basic implementation of topic-specific PageRank and it can be used in order to satisfy a user information need in a large website like Wikipedia.</p>
           
             <div class="content-left text-intro">
               <br>
@@ -437,11 +437,11 @@
             <div class="content-right text-intro">
               <br>
           
-              <img src="img/down.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Keywords in <code>meta</code> tag may not reflect topics in a article.
+              <img src="img/down.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Keywords in listed in a page may not reflect topics in a article.
               <br>
               <br>
               <br>
-              <img src="img/down.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Page and content graphs construction is slow.
+              <img src="img/down.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Page graph is construction is slow.
             </div>
         
           </div>
