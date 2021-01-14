@@ -50,7 +50,7 @@
                     <p class="text-intro">WikipediaSearch is a command line user-interactive tool that computes a Personalized PageRank over a Wikipedia corpus.</p>
                     <p class="text-intro">Considering a set of user rankings on five specific topics, WikipediaSearch performs a ranking of the Wikipedia articles based on the user's preferences.</p>
                     <br>
-                    <p class="text-intro">For this application, the Wikipedia dataset taken into account for this work is the <a href="https://dumps.wikimedia.org/other/static_html_dumps/April_2007/"> simple Wikipedia dump of April 2007 </a>.</p>
+                    <p class="text-intro">For this application, the Wikipedia dataset taken into account is the <a href="https://dumps.wikimedia.org/other/static_html_dumps/April_2007/"> simple Wikipedia dump of April 2007 </a>.</p>
                 </div>
                 
                 <div class="content-right">
@@ -218,7 +218,7 @@
             <div class="content-left">
               <h3> <b> 2. External link exclusion </b></h3>
               <br>
-              <p>Some Wikipedia pages will contain some link tags that refers to pages that are external to Wikipedia. </p>
+              <p>Some Wikipedia pages will contain some link tags that refer to pages that are external to Wikipedia. </p>
             </div>
             <div class="content-right">
               <img class="alignright" src="img/externalLink.png">
@@ -233,7 +233,7 @@
               <h3> <b> 3. Filtering not useful pages </b></h3>
               <br>
               <p>
-                Inside (almost) every page there are links to Wikipedia articles related to some pages that are not an articles of the encyclopedia (help page, community portal, authors discussion, etc...).
+                Inside (almost) every page there are links to Wikipedia articles related to some pages that are not articles of the encyclopedia (help page, community portal, authors discussion, etc...).
               </p>
             </div>
             <div class="content-right">
@@ -340,7 +340,7 @@
               <br> <br>
               Two data-members: a <code>TopicSpecificPageRank</code> and a <code>User</code> istance.
               <br> <br>
-              <code>compute_weights</code> will compute the set of weights for the set of topic specified by the user, while <code>compute_final_pagerank</code> function will calculate the final PageRank vector.
+              <code>compute_weights</code> will compute the set of weights for the set of topics specified by the user, while <code>compute_final_pagerank</code> function will calculate the final PageRank vector.
             </div>
             <div class="content-right">
               <img src="img/irsystemclass.png" width="700" height="500">
@@ -455,7 +455,7 @@
             <br>
             <div class="text-intro">
               <ul>
-                <li> <b>Graph construction</b>: speedup the computation (parallelization). </li>
+                <li> <b>Graph construction</b>: speedup the computation (parallelize the work). </li>
                 <br>
                 <li>  <b>Refine the content information</b>: some NLP algorithms can be used to extract the main topics of a page.  </li>
                 <br>
