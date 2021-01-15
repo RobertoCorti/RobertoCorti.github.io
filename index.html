@@ -48,7 +48,7 @@
                     <h2> <b> What is WikipediaSearch? </b> </h2>
                     <div class="text-subtitle">A Wikipedia search engine</div>
                     <p class="text-intro">WikipediaSearch is a command line user-interactive tool that computes a Personalized PageRank over a Wikipedia corpus.</p>
-                    <p class="text-intro">Considering a set of user rankings on five specific topics, WikipediaSearch performs a ranking of the Wikipedia articles based on the user's preferences.</p>
+                    <p class="text-intro">Considering a set of user rankings on five specific topics, WikipediaSearch performs a ranking of the Wikipedia articles based on the user's preferences and on the pages' graph structure.</p>
                     <br>
                     <p class="text-intro">For this application, the Wikipedia dataset taken into account is the <a href="https://dumps.wikimedia.org/other/static_html_dumps/April_2007/"> simple Wikipedia dump of April 2007 </a>.</p>
                 </div>
@@ -338,7 +338,7 @@
               <br>
               <code>IRsystem</code> class will compute the final Pagerank vector using user'specified weight.
               <br> <br>
-              Two data-members: a <code>TopicSpecificPageRank</code> and a <code>User</code> istance.
+              Two data-members: a <code>TopicSpecificPageRank</code> and a <code>User</code> instance.
               <br> <br>
               <code>compute_weights</code> will compute the set of weights for the set of topics specified by the user, while <code>compute_final_pagerank</code> function will calculate the final PageRank vector.
             </div>
@@ -431,7 +431,7 @@
               <br>
               <br>
               <br>
-              <img src="img/up.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Final PageRank computation is fast.
+              <img src="img/up.png" style="vertical-align:middle" width="90" height="90"> &nbsp; PageRank computation is fast.
             </div>
           
             <div class="content-right text-intro">
@@ -441,7 +441,7 @@
               <br>
               <br>
               <br>
-              <img src="img/down.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Page graph is construction is slow.
+              <img src="img/down.png" style="vertical-align:middle" width="90" height="90"> &nbsp; Page graph construction is slow.
             </div>
         
           </div>
