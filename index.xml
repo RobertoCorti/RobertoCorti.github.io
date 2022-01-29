@@ -7,9 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 29 Jan 2022 17:41:54 +0100</lastBuildDate>
     
 	<atom:link href="https://robertocorti.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My story</title>
+      <link>https://robertocorti.github.io/blog/my_story/</link>
+      <pubDate>Sat, 29 Jan 2022 17:46:22 +0100</pubDate>
+      
+      <guid>https://robertocorti.github.io/blog/my_story/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://robertocorti.github.io/blog/helloworld/</link>
+      <pubDate>Sat, 29 Jan 2022 17:43:05 +0100</pubDate>
+      
+      <guid>https://robertocorti.github.io/blog/helloworld/</guid>
+      <description>Hello World!</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://robertocorti.github.io/about/</link>
+      <pubDate>Sat, 29 Jan 2022 17:41:54 +0100</pubDate>
+      
+      <guid>https://robertocorti.github.io/about/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
