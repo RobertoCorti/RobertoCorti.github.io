@@ -2,24 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Roberto Corti</title>
-    <link>https://robertocorti.github.io/</link>
+    <link>localhost/</link>
     <description>Recent content on Roberto Corti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     
-	<atom:link href="https://robertocorti.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="localhost/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About me</title>
-      <link>https://robertocorti.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://robertocorti.github.io/about/</guid>
-      <description>I&amp;rsquo;m a MSc student in Data Science and Scientific Computing at the University of Trieste, Italy. My interests focus on machine learning, bayesian statistics and its applications on Astrophysics and Cosmology. I am currently working on my master&amp;rsquo;s thesis on machine learning methods for supernova Type Ia selection effects modelling with the Trotta Lab research group at SISSA, Trieste.
-I am located in Trieste, Italy. You can contact me on Twitter, Linkedin or on GitHub.</description>
-    </item>
     
   </channel>
 </rss>
