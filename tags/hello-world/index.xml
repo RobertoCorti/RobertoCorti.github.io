@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hello World on Roberto Corti Web Page</title>
-    <link>https://hugo-profile.netlify.app/tags/hello-world/</link>
+    <link>https://robertocorti.github.io/tags/hello-world/</link>
     <description>Recent content in Hello World on Roberto Corti Web Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Dec 2022 22:36:33 +0530</lastBuildDate>
     
-	<atom:link href="https://hugo-profile.netlify.app/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertocorti.github.io/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello World!</title>
-      <link>https://hugo-profile.netlify.app/blogs/hello_world/</link>
+      <link>https://robertocorti.github.io/blogs/hello_world/</link>
       <pubDate>Fri, 23 Dec 2022 22:36:33 +0530</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/blogs/hello_world/</guid>
+      <guid>https://robertocorti.github.io/blogs/hello_world/</guid>
       <description>Hello World! This is my first post on this page. I hope to fill this space with personal projects, blog posts, thoughts, and many other things I’d like to share with you!
 See you soon! :wink:
 Roberto</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Roberto Corti Web Page</title>
-    <link>https://hugo-profile.netlify.app/tags/</link>
+    <link>https://robertocorti.github.io/tags/</link>
     <description>Recent content in Tags on Roberto Corti Web Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Dec 2022 22:36:33 +0530</lastBuildDate>
     
-	<atom:link href="https://hugo-profile.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://robertocorti.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello World</title>
-      <link>https://hugo-profile.netlify.app/tags/hello-world/</link>
+      <link>https://robertocorti.github.io/tags/hello-world/</link>
       <pubDate>Fri, 23 Dec 2022 22:36:33 +0530</pubDate>
       
-      <guid>https://hugo-profile.netlify.app/tags/hello-world/</guid>
+      <guid>https://robertocorti.github.io/tags/hello-world/</guid>
       <description></description>
     </item>
     
