@@ -28,15 +28,20 @@
 
 
 
-<meta property="og:title" content="Categories" />
-<meta property="og:description" content="Text about my cool site" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://hugo-profile.netlify.app/categories/" />
-<meta property="og:site_name" content="Roberto Corti" />
+<meta property="og:title" content="Hello World!" />
+<meta property="og:description" content="Hello World! This is my first post in this page. I hope to fill this space with personal projects, blogposts, thoughts and many other things that I&rsquo;d like to share to you!
+See you soon!
+Roberto" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hugo-profile.netlify.app/blogs/hello_world/" />
+<meta property="article:published_time" content="2022-12-23T22:36:33+05:30" />
+<meta property="article:modified_time" content="2022-12-23T22:36:33+05:30" /><meta property="og:site_name" content="Roberto Corti" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content="Text about my cool site"/>
+<meta name="twitter:title" content="Hello World!"/>
+<meta name="twitter:description" content="Hello World! This is my first post in this page. I hope to fill this space with personal projects, blogposts, thoughts and many other things that I&rsquo;d like to share to you!
+See you soon!
+Roberto"/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -100,11 +105,14 @@
     }
 </style>
 
-<meta name="description" content="Categories of Roberto Corti Web Page">
-<link rel="stylesheet" href="/css/list.css" media="all">
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-5/all-5.15.4.js"></script>
 
   <title>
-Categories | Roberto Corti Web Page
+Hello World! | Roberto Corti Web Page
 
   </title>
 </head>
@@ -246,19 +254,109 @@ Categories | Roberto Corti Web Page
     </nav>
 </header>
 <div id="content">
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">Categories</h2>
-    <div class="row">
-        
-        <div class="row justify-content-center">
-            <div class="col-auto m-3">
-                
-
-
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Hello World!</h1>
+            <div class="text-center">
+              Roberto 
+              <small>|</small>
+              Dec 23, 2022
             </div>
+          </div>
+          
+          <article class="page-content  p-2">
+          <h1 id="hello-world">Hello World!</h1>
+<p>This is my first post in this page. I hope to fill this space with personal projects, blogposts, thoughts and many other things that I&rsquo;d like to share to you!</p>
+<p>See you soon!</p>
+<p><em>Roberto</em></p>
+
+          </article>
         </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents"></nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://hugo-profile.netlify.app/tags/hello-world" target="_blank">Hello World</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Hello%20World%21&url=https%3a%2f%2fhugo-profile.netlify.app%2fblogs%2fhello_world%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Hello%20World%21: https%3a%2f%2fhugo-profile.netlify.app%2fblogs%2fhello_world%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="mailto:?subject=Hello%20World%21&amp;body=Check out this site https%3a%2f%2fhugo-profile.netlify.app%2fblogs%2fhello_world%2f">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
     </div>
-</div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
 
   </div><footer>
     <div class="container py-3" id="recent-posts">
@@ -411,6 +509,24 @@ Roberto</p>
 
 
 
+
+
+<!-- MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" integrity="sha384-M5jmNxKC9EVnuqeMwRHvFuYUE8Hhp0TgBruj/GZRkYtiMrCRgH7yvv5KY+Owi7TW" crossorigin="anonymous"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+</script>
 
 
 

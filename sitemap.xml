@@ -3,20 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hugo-profile.netlify.app/blogs/</loc>
+    <lastmod>2022-12-23T22:36:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo-profile.netlify.app/tags/hello-world/</loc>
+    <lastmod>2022-12-23T22:36:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo-profile.netlify.app/blogs/hello_world/</loc>
+    <lastmod>2022-12-23T22:36:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo-profile.netlify.app/</loc>
+    <lastmod>2022-12-23T22:36:33+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hugo-profile.netlify.app/tags/</loc>
+    <lastmod>2022-12-23T22:36:33+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hugo-profile.netlify.app/gallery/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hugo-profile.netlify.app/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hugo-profile.netlify.app/tags/</loc>
   </url>
   
 </urlset>
