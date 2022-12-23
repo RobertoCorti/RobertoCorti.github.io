@@ -7,3 +7,6 @@
 [submodule "hugo-profile"]
 	path = hugo-profile
 	url = https://github.com/gurusabarish/hugo-profile.git
+[submodule "themes/hugo-profile"]
+	path = themes/hugo-profile
+	url = https://github.com/gurusabarish/hugo-profile.git
